@@ -45,11 +45,23 @@
 
 <script>
 export default {
+  // FIXME: get
   props: {
-    data: {
-      type: Array,
+    find: {
+      type: Object,
       required: true,
-      default: () => ([])
+      default: () => ({})
+    }
+  },
+  mounted () {
+    const tasks = (Object.keys(this.find).length === 0) ? this.$$tasks : this.$$tasks.findAll(this.find)
+    tasks.watch().subscribe(data => {
+      this.data = data
+    })
+  },
+  data () {
+    return {
+      data: []
     }
   }
 }

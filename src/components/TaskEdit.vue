@@ -5,7 +5,7 @@
       <div class="block">
         <label class="label">Title</label>
         <p class="control">
-          <input type="text" placeholder="Text input" class="input" :value="item.title">
+          <input type="text" placeholder="Text input" class="input" v-model="item.title">
         </p>
         <label class="label">Username</label>
         <p class="control has-icon has-icon-right">
@@ -46,7 +46,7 @@
           </label>
         </p>
         <p class="control">
-          <button class="button is-primary">Submit</button>
+          <button class="button is-primary" @click="submit">Submit</button>
           <button class="button is-link" @click="$emit('closeTask')">Cancel</button>
         </p>
       </div>
@@ -60,6 +60,11 @@ export default {
     item: {
       type: Object,
       default: () => ({})
+    }
+  },
+  methods: {
+    submit () {
+      this.$$tasks.store(this.item)
     }
   }
 }

@@ -1,7 +1,7 @@
 <template>
   <div class="view-wrap tile is-ancestor">
     <div class="view-gutter"></div>
-    <TaskList :data="tasks" @editTask="editTask"></TaskList>
+    <TaskList @editTask="editTask"></TaskList>
     <TaskEdit v-if="selected" :item="selected" @closeTask="closeTask"></TaskEdit>
     <div class="view-gutter"></div>
   </div>
@@ -18,25 +18,7 @@ export default {
   },
   data () {
     return {
-      selected: null,
-      tasks: [
-        {
-          title: 'Quest1',
-          due: new Date()
-        },
-        {
-          title: 'Quest2',
-          due: new Date()
-        },
-        {
-          title: 'Quest3',
-          due: new Date()
-        },
-        {
-          title: 'Quest4',
-          due: new Date()
-        }
-      ]
+      selected: null
     }
   },
   methods: {
