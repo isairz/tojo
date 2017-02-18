@@ -30,7 +30,8 @@ export default {
   padding-top: 50px
   margin-left: 180px
   transform: translateZ(0)
-  .container
-    margin: 0
-    padding: 20px
+
+.container
+  margin: 0
+  padding: 20px
 </style>
