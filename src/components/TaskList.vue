@@ -27,10 +27,10 @@
       </div>
 
       <a class="panel-block" v-for="item in data" @click="$emit('editTask', item)">
-        <span class="panel-icon">
-          <i class="fa fa-book"></i>
-        </span>
         <div class="row-left">
+          <span class="panel-icon">
+            <i class="fa fa-book"></i>
+          </span>
           {{ item.title }}
         </div>
         <div class="row-right">
@@ -80,7 +80,6 @@ export default {
     flex: 1 1000 auto
     height: 100%
     justify-content: flex-start
-    margin-left: -30px
     min-width: 1px
     position: relative
     width: 100%
