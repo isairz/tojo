@@ -1,0 +1,8 @@
+rethinkdb_data
+**/*.log
+.hz/secrets.toml
+
+.DS_Store
+node_modules/
+dist/
+npm-debug.log
