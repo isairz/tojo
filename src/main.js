@@ -5,6 +5,8 @@ import App from './App'
 import router from './plugins/router'
 import horizon from './plugins/horizon'
 
+Vue.use(require('vue-moment'))
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
