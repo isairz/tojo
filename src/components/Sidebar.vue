@@ -19,7 +19,7 @@ export default {
   data () {
     return {
       models: {
-        '': 'Home',
+        'hello': 'Hello',
         task: 'Task'
       }
     }

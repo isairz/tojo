@@ -14,10 +14,8 @@
       </div>
       <p class="panel-tabs">
         <a class="is-active">All</a>
-        <a>Public</a>
-        <a>Private</a>
-        <a>Sources</a>
-        <a>Forks</a>
+        <a>Incomplete</a>
+        <a>Completed</a>
       </p>
 
       <div class="panel-block">
